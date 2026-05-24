@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Outfit', sans-serif;
+  
+  /* Redefine emerald to a softer, more professional teal/emerald */
+  --color-emerald-50: #f0fdfa;
+  --color-emerald-100: #ccfbf1;
+  --color-emerald-500: #0d9488;
+  --color-emerald-600: #0f766e;
+  
+  /* Redefine cyan to a softer, more professional sky/ocean blue */
+  --color-cyan-50: #f0f9ff;
+  --color-cyan-100: #e0f2fe;
+  --color-cyan-500: #0284c7;
+  --color-cyan-600: #0369a1;
+
+  /* Keep standard primary/accent mappings */
+  --color-primary-50: var(--color-emerald-50);
+  --color-primary-100: var(--color-emerald-100);
+  --color-primary-500: var(--color-emerald-500);
+  --color-primary-600: var(--color-emerald-600);
+  --color-accent-500: var(--color-cyan-500);
+  --color-accent-600: var(--color-cyan-600);
+
+  /* Soften dark mode colors to slate-gray variants */
+  --color-dark-bg: #0f172a;      /* Slate 900 */
+  --color-dark-surface: #0b0f19; /* Navy-Slate */
+  --color-dark-card: #1e293b;    /* Slate 800 */
+  
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Custom styles for modern blur scroll effects and glow elements */
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.dark .glassmorphism {
+  background: rgba(18, 24, 38, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glow-card-emerald {
+  transition: all 0.3s ease;
+}
+.glow-card-emerald:hover {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(13, 148, 136, 0.15);
+  border-color: rgba(13, 148, 136, 0.3);
+  transform: translateY(-2px);
+}
+
+.glow-card-cyan {
+  transition: all 0.3s ease;
+}
+.glow-card-cyan:hover {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(2, 132, 199, 0.15);
+  border-color: rgba(2, 132, 199, 0.3);
+  transform: translateY(-2px);
+}
