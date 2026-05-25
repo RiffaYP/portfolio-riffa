@@ -89,3 +89,21 @@ h1, h2, h3, h4, h5, h6 {
   border-color: rgba(2, 132, 199, 0.3);
   transform: translateY(-2px);
 }
+
+.glow-card-blue {
+  transition: all 0.3s ease;
+}
+.glow-card-blue:hover {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(37, 99, 235, 0.15);
+  border-color: rgba(37, 99, 235, 0.3);
+  transform: translateY(-2px);
+}
+
+.glow-card-indigo {
+  transition: all 0.3s ease;
+}
+.glow-card-indigo:hover {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(79, 70, 229, 0.15);
+  border-color: rgba(79, 70, 229, 0.3);
+  transform: translateY(-2px);
+}
