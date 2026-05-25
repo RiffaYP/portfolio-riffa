@@ -1,4 +1,4 @@
-import { ExternalLink, Dumbbell, Joystick, Wind, BookOpen, Users } from 'lucide-react';
+import { ExternalLink, Dumbbell, Joystick, Wind, BookOpen, Users, Video } from 'lucide-react';
 
 export default function Projects() {
   const projects = [
@@ -94,11 +94,12 @@ export default function Projects() {
     },
     {
       id: 4,
-      title: 'Jurnal Informatika OJS Platform',
+      title: 'JIPI OJS Platform',
       category: 'Operating System / Journal Management System',
-      desc: 'Project kelompok mata kuliah Sistem Operasi berupa instalasi dan konfigurasi Open Journal Systems (OJS) menggunakan Ubuntu. Sistem ini digunakan sebagai platform jurnal informatika yang berisi jurnal, artikel, atau referensi yang berkaitan dengan bidang informatika.',
+      desc: 'Project kelompok mata kuliah Sistem Operasi berupa instalasi dan konfigurasi Open Journal Systems (OJS) menggunakan Ubuntu. Sistem ini digunakan sebagai platform jurnal JIPI (Jurnal Inovasi dan Pengembangan Informatika) yang berisi jurnal, artikel, atau referensi yang berkaitan dengan bidang informatika.',
       tech: ['Ubuntu', 'OJS', 'Linux', 'Web Server', 'Journal Management System'],
       label: 'Group Project',
+      video: 'https://youtu.be/a11Ttekbh2g',
       icon: <BookOpen className="w-8 h-8 text-indigo-500" />,
       glowClass: 'glow-card-indigo',
       illustration: (
@@ -155,10 +156,12 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {projects.map((project) => {
             const hasRepo = !!project.repo;
-            const CardComponent = hasRepo ? 'a' : 'div';
-            const cardProps = hasRepo
+            const hasVideo = !!project.video;
+            const hasLink = hasRepo || hasVideo;
+            const CardComponent = hasLink ? 'a' : 'div';
+            const cardProps = hasLink
               ? {
-                  href: project.repo,
+                  href: project.repo || project.video,
                   target: '_blank',
                   rel: 'noopener noreferrer',
                 }
@@ -168,7 +171,7 @@ export default function Projects() {
               <CardComponent
                 key={project.id}
                 {...cardProps}
-                className={`p-6 rounded-3xl bg-gray-50 dark:bg-dark-card border border-gray-150 dark:border-gray-800 shadow-xl flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl ${project.glowClass} group ${hasRepo ? 'cursor-pointer' : ''}`}
+                className={`p-6 rounded-3xl bg-gray-50 dark:bg-dark-card border border-gray-150 dark:border-gray-800 shadow-xl flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl ${project.glowClass} group ${hasLink ? 'cursor-pointer' : ''}`}
               >
                 <div>
                   {/* Illustration Frame */}
@@ -217,6 +220,18 @@ export default function Projects() {
 
                         <div className="px-4 py-2 text-xs font-bold rounded-xl bg-gray-900 group-hover:bg-emerald-600 dark:bg-gray-800 dark:group-hover:bg-cyan-600 text-white transition-colors duration-300 flex items-center gap-1">
                           View Repository
+                          <ExternalLink className="w-3.5 h-3.5" />
+                        </div>
+                      </>
+                    ) : hasVideo ? (
+                      <>
+                        <div className="text-sm font-semibold flex items-center gap-1.5 text-red-650 hover:text-red-500 dark:text-red-400 dark:hover:text-red-300 transition-colors">
+                          <Video className="w-4.5 h-4.5 text-red-500" />
+                          <span>Video Demo</span>
+                        </div>
+
+                        <div className="px-4 py-2 text-xs font-bold rounded-xl bg-gray-900 group-hover:bg-indigo-600 dark:bg-gray-800 dark:group-hover:bg-indigo-650 text-white transition-colors duration-300 flex items-center gap-1">
+                          Watch Project Demo
                           <ExternalLink className="w-3.5 h-3.5" />
                         </div>
                       </>
