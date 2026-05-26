@@ -5,7 +5,7 @@ export default function Education() {
     {
       id: 1,
       institution: 'Universitas Lampung',
-      degree: 'Sarjana Komputer (S.Kom) - Teknik Informatika',
+      degree: 'Sarjana Teknik (S.T.) - Teknik Informatika',
       period: '2024 - 2028 (Expected)',
       location: 'Bandar Lampung, Indonesia',
       icon: <GraduationCap className="w-6 h-6 text-emerald-500" />,
