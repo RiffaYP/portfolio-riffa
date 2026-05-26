@@ -29,7 +29,7 @@ export default function Education() {
     {
       id: 2,
       institution: 'SMA Al-Azhar 3 Bandar Lampung',
-      degree: 'MIPA (Matematika dan Ilmu Pengetahuan Alam)',
+      degree: 'IPA (Ilmu Pengetahuan Alam)',
       period: '2021 - 2024',
       location: 'Bandar Lampung, Indonesia',
       icon: <School className="w-6 h-6 text-cyan-500" />,
