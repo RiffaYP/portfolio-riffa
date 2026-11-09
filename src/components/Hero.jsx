@@ -190,7 +190,7 @@ export default function Hero() {
             </div>
 
             {/* Floating Profile Image */}
-            <div className="absolute -bottom-10 right-4 md:-bottom-12 md:-right-8 lg:-right-10 w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-2xl border-2 border-emerald-500/35 dark:border-cyan-500/30 bg-slate-950 p-1.5 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.8)] z-20 animate-float [animation-delay:1.5s]">
+            <div className="hidden lg:absolute lg:-bottom-10 lg:right-4 md:lg:-bottom-12 md:lg:-right-8 lg:-right-10 w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-2xl border-2 border-emerald-500/35 dark:border-cyan-500/30 bg-slate-950 p-1.5 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.8)] z-20 animate-float [animation-delay:1.5s]">
               <div className="w-full h-full rounded-xl overflow-hidden">
                 <img
                   src="/profile-riffa.jpeg"

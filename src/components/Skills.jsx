@@ -91,16 +91,16 @@ export default function Skills() {
                 {category.skills.map((skill, skillIndex) => (
                   <div
                     key={skillIndex}
-                    className={`p-4 rounded-xl bg-slate-900/95 dark:bg-slate-950/75 border backdrop-blur-md transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg group flex items-start space-x-3 ${category.itemBorderClass}`}
+                    className={`p-4 rounded-xl bg-slate-800/90 dark:bg-slate-800/90 border backdrop-blur-md transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg group flex items-start space-x-3 ${category.itemBorderClass}`}
                   >
                     <div className="mt-1 flex-shrink-0">
                       <ChevronRight className={`w-4 h-4 group-hover:translate-x-0.5 transition-transform ${category.chevronColorClass}`} />
                     </div>
                     <div>
-                      <div className="font-bold text-sm text-white">
+                      <div className="font-bold text-sm text-slate-900 dark:text-white">
                         {skill.name}
                       </div>
-                      <div className="text-xs text-slate-300 mt-0.5 leading-relaxed">
+                      <div className="text-xs text-slate-600 dark:text-slate-300 mt-0.5 leading-relaxed">
                         {skill.desc}
                       </div>
                     </div>

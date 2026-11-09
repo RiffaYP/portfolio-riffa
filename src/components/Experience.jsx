@@ -68,7 +68,7 @@ export default function Experience() {
         <div className="relative max-w-4xl mx-auto">
           {/* Vertical Line */}
           <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gray-200 dark:bg-gray-800 -translate-x-1/2 hidden md:block" />
-          <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gray-200 dark:bg-gray-800 md:hidden" />
+          <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gray-200 dark:bg-gray-800 md:hidden" />
 
           {/* Timeline Items */}
           <div className="space-y-12">
@@ -82,7 +82,7 @@ export default function Experience() {
                   }`}
                 >
                   {/* Timeline Badge (Circle) */}
-                  <div className="absolute left-6 md:left-1/2 w-10 h-10 rounded-full bg-white dark:bg-dark-card border-2 border-emerald-500 dark:border-cyan-400 flex items-center justify-center -translate-x-1/2 z-10 shadow-md">
+                  <div className="absolute left-4 md:left-1/2 w-10 h-10 rounded-full bg-white dark:bg-dark-card border-2 border-emerald-500 dark:border-cyan-400 flex items-center justify-center -translate-x-1/2 z-10 shadow-md">
                     <span className="text-emerald-500 dark:text-cyan-400">{exp.icon}</span>
                   </div>
 
@@ -90,7 +90,7 @@ export default function Experience() {
                   <div className="w-full md:w-1/2 hidden md:block" />
 
                   {/* Experience Card */}
-                  <div className="w-full md:w-[calc(50%-2rem)] ml-12 md:ml-0 p-6 rounded-3xl bg-white dark:bg-dark-card border border-gray-150 dark:border-gray-800 shadow-xl transition-transform hover:-translate-y-1 duration-300">
+                  <div className="w-full md:w-[calc(50%-2rem)] ml-10 md:ml-0 p-6 rounded-3xl bg-white dark:bg-dark-card border border-gray-150 dark:border-gray-800 shadow-xl transition-transform hover:-translate-y-1 duration-300">
                     <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
                       <span className="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded-md bg-emerald-100 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">
                         {exp.type}
