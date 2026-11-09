@@ -1,4 +1,4 @@
-import { GraduationCap, Code2, ShieldAlert, Cpu, Database, Brain } from 'lucide-react';
+import { GraduationCap, Code2, Cpu, Database, Brain } from 'lucide-react';
 
 export default function About() {
   const interests = [
