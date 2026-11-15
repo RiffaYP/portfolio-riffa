@@ -107,7 +107,7 @@ export default function Hero() {
           </div>
 
           {/* Hero Right Code Visual */}
-          <div className="lg:col-span-5 w-full max-w-md mx-auto lg:max-w-none relative">
+          <div className="lg:col-span-5 w-full max-w-md mx-auto lg:max-w-none relative mb-14 lg:mb-0">
             {/* Soft Glow behind the card */}
             <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-cyan-500/10 to-emerald-500/10 blur-xl opacity-40" />
             <div className="relative w-full rounded-2xl bg-slate-950 border border-cyan-500/20 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.8)] overflow-hidden animate-float">
@@ -190,7 +190,7 @@ export default function Hero() {
             </div>
 
             {/* Floating Profile Image */}
-            <div className="hidden lg:absolute lg:-bottom-10 lg:right-4 md:lg:-bottom-12 md:lg:-right-8 lg:-right-10 w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-2xl border-2 border-emerald-500/35 dark:border-cyan-500/30 bg-slate-950 p-1.5 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.8)] z-20 animate-float [animation-delay:1.5s]">
+            <div className="absolute -bottom-10 right-2 sm:right-4 lg:-bottom-12 lg:-right-8 w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 rounded-2xl border-2 border-emerald-500/35 dark:border-cyan-500/30 bg-slate-950 p-1.5 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.8)] z-20 animate-float [animation-delay:1.5s]">
               <div className="w-full h-full rounded-xl overflow-hidden">
                 <img
                   src="/profile-riffa.jpeg"
