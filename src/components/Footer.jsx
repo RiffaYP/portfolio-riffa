@@ -46,7 +46,7 @@ export default function Footer() {
               Riffa Yudika Permana
             </div>
             <p className="text-xs text-gray-500 dark:text-gray-400">
-              Informatics Engineering Student • Universitas Lampung
+              Mahasiswa Teknik Informatika • Universitas Lampung
             </p>
           </div>
 
@@ -83,7 +83,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="flex flex-col sm:flex-row items-center justify-between text-xxs text-gray-400 gap-4">
           <div>
-            © {new Date().getFullYear()} Riffa Yudika Permana. All rights reserved.
+              © {new Date().getFullYear()} Riffa Yudika Permana. Hak cipta dilindungi.
           </div>
           <div className="flex items-center space-x-4">
             <a

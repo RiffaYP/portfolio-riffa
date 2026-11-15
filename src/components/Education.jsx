@@ -6,7 +6,7 @@ export default function Education() {
       id: 1,
       institution: 'Universitas Lampung',
       degree: 'Sarjana Teknik (S.T.) - Teknik Informatika',
-      period: '2024 - 2028 (Expected)',
+      period: '2024 - 2028 (Perkiraan)',
       location: 'Bandar Lampung, Indonesia',
       icon: <GraduationCap className="w-6 h-6 text-emerald-500" />,
       tag: 'Pendidikan Tinggi',
@@ -15,7 +15,7 @@ export default function Education() {
       coursesLabel: 'Mata Kuliah / Fokus Utama',
       details: [
         'Fokus perkuliahan pada logika komputasi, algoritma dan pemrograman, struktur data, rekayasa perangkat lunak, sistem operasi, serta sistem basis data.',
-        'Mengembangkan kemampuan pemrograman melalui praktikum, tugas kuliah, dan project mandiri.',
+        'Mengembangkan kemampuan pemrograman melalui tugas kuliah dan proyek mandiri.',
         'Memiliki ketertarikan pada pengembangan web, basis data, dan sistem komputer.'
       ],
       courses: [
@@ -60,7 +60,7 @@ export default function Education() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl sm:text-4xl font-extrabold font-heading text-gray-900 dark:text-white">
-            Education Pathway
+            Riwayat Pendidikan
           </h2>
           <div className="mt-2 h-1.5 w-16 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full mx-auto" />
           <p className="mt-4 text-lg text-gray-655 dark:text-gray-400">

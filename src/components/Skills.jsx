@@ -3,7 +3,7 @@ import { Code2, Wrench, BookOpen, ChevronRight } from 'lucide-react';
 export default function Skills() {
   const skillCategories = [
     {
-      title: 'Programming Languages',
+      title: 'Bahasa Pemrograman',
       icon: <Code2 className="w-6 h-6 text-emerald-500" />,
       colorClass: 'border-emerald-500/20 dark:border-emerald-500/10 hover:border-emerald-500/40',
       iconBgClass: 'bg-emerald-50 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-400',
@@ -18,7 +18,7 @@ export default function Skills() {
       ],
     },
     {
-      title: 'Frameworks & Tools',
+      title: 'Framework & Tools',
       icon: <Wrench className="w-6 h-6 text-cyan-500" />,
       colorClass: 'border-cyan-500/20 dark:border-cyan-500/10 hover:border-cyan-500/40',
       iconBgClass: 'bg-cyan-50 dark:bg-cyan-500/10 text-cyan-600 dark:text-cyan-400',
@@ -35,7 +35,7 @@ export default function Skills() {
       ],
     },
     {
-      title: 'Course Competencies',
+      title: 'Kompetensi Mata Kuliah',
       icon: <BookOpen className="w-6 h-6 text-emerald-500" />,
       colorClass: 'border-emerald-500/20 dark:border-emerald-500/10 hover:border-emerald-500/40',
       iconBgClass: 'bg-emerald-50 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-400',
@@ -61,11 +61,11 @@ export default function Skills() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl sm:text-4xl font-extrabold font-heading text-gray-900 dark:text-white">
-            Skills & Competencies
+            Keahlian & Kompetensi
           </h2>
           <div className="mt-2 h-1.5 w-16 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full mx-auto" />
           <p className="mt-4 text-lg text-gray-650 dark:text-gray-400">
-            Bahasa pemrograman, tools, dan kompetensi mata kuliah yang saya pelajari untuk menunjang kegiatan belajar di laboratorium.
+            Bahasa pemrograman, tools, dan kompetensi mata kuliah yang saya pelajari selama perkuliahan.
           </p>
         </div>
 
@@ -109,13 +109,6 @@ export default function Skills() {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Lab Assistant Note Callout */}
-        <div className="mt-12 p-6 rounded-2xl bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 border border-emerald-500/20 dark:border-cyan-500/20 text-center max-w-4xl mx-auto">
-          <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300">
-            💡 <strong>Kesiapan Praktikum:</strong> Pemahaman di atas mencakup materi semester awal Teknik Informatika. Saya siap membantu mendampingi, menjawab pertanyaan, dan membimbing teman-teman selama praktikum dasar berlangsung.
-          </p>
         </div>
 
       </div>

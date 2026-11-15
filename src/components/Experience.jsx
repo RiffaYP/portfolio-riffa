@@ -14,7 +14,7 @@ export default function Experience() {
         'Menyusun proposal dan laporan pertanggungjawaban (LPJ) kegiatan MUBES.',
         'Mendokumentasikan presensi peserta sidang secara digital dan mencatat notulensi jalannya rapat pleno.'
       ],
-      alignment: 'Melatih saya dalam mengelola berkas secara rapi dan terstruktur, yang sangat berguna untuk mengurus administrasi praktikan di laboratorium.'
+      alignment: 'Melatih saya dalam mengelola berkas secara rapi dan terstruktur.'
     },
     {
       id: 2,
@@ -56,7 +56,7 @@ export default function Experience() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl sm:text-4xl font-extrabold font-heading text-gray-900 dark:text-white">
-            Organizational Experience
+            Pengalaman Organisasi
           </h2>
           <div className="mt-2 h-1.5 w-16 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full mx-auto" />
           <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
@@ -117,13 +117,6 @@ export default function Experience() {
                         </li>
                       ))}
                     </ul>
-
-                    {/* Lab Assistant Alignment Callout */}
-                    <div className="pt-3.5 border-t border-gray-100 dark:border-gray-800">
-                      <p className="text-xs italic text-gray-500 dark:text-gray-400 leading-normal">
-                        🎯 <strong>Korelasi Keasistenan:</strong> {exp.alignment}
-                      </p>
-                    </div>
 
                   </div>
                 </div>

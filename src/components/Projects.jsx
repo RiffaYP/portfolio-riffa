@@ -1,4 +1,4 @@
-import { ExternalLink, Dumbbell, Joystick, Wind, BookOpen, Users, Video } from 'lucide-react';
+﻿import { ExternalLink, Dumbbell, Joystick, Wind, BookOpen, Users, Video } from 'lucide-react';
 
 export default function Projects() {
   const projects = [
@@ -31,7 +31,7 @@ export default function Projects() {
       id: 2,
       title: 'Dungeons & Dragons Project',
       category: 'Object-Oriented Programming',
-      desc: 'Project mata kuliah Pemrograman Berorientasi Objek berbasis Java yang menerapkan konsep class, object, method, dan alur program OOP.',
+      desc: 'Proyek mata kuliah Pemrograman Berorientasi Objek berbasis Java yang menerapkan konsep class, object, method, dan alur program OOP.',
       tech: ['Java', 'OOP'],
       repo: 'https://github.com/RiffaYP/DND-project',
       icon: <Joystick className="w-8 h-8 text-cyan-500" />,
@@ -57,9 +57,9 @@ export default function Projects() {
       id: 3,
       title: 'DIVA AC Company Profile Website',
       category: 'Operating System / CMS Website',
-      desc: 'Project kelompok mata kuliah Sistem Operasi berupa instalasi dan konfigurasi website company profile berbasis WordPress untuk usaha DIVA AC menggunakan Ubuntu. Website ini menampilkan informasi usaha, layanan, dan profil bisnis secara sederhana.',
+      desc: 'Proyek kelompok mata kuliah Sistem Operasi berupa instalasi dan konfigurasi website company profile berbasis WordPress untuk usaha DIVA AC menggunakan Ubuntu. Website ini menampilkan informasi usaha, layanan, dan profil bisnis secara sederhana.',
       tech: ['Ubuntu', 'WordPress', 'Linux', 'CMS', 'Web Server'],
-      label: 'Group Project',
+      label: 'Proyek Kelompok',
       icon: <Wind className="w-8 h-8 text-blue-500" />,
       glowClass: 'glow-card-blue',
       illustration: (
@@ -96,9 +96,9 @@ export default function Projects() {
       id: 4,
       title: 'JIPI OJS Platform',
       category: 'Operating System / Journal Management System',
-      desc: 'Project kelompok mata kuliah Sistem Operasi berupa instalasi dan konfigurasi Open Journal Systems (OJS) menggunakan Ubuntu. Sistem ini digunakan sebagai platform jurnal JIPI (Jurnal Inovasi dan Pengembangan Informatika) yang berisi jurnal, artikel, atau referensi yang berkaitan dengan bidang informatika.',
+      desc: 'Proyek kelompok mata kuliah Sistem Operasi berupa instalasi dan konfigurasi Open Journal Systems (OJS) menggunakan Ubuntu. Sistem ini digunakan sebagai platform jurnal JIPI (Jurnal Inovasi dan Pengembangan Informatika) yang berisi jurnal, artikel, atau referensi yang berkaitan dengan bidang informatika.',
       tech: ['Ubuntu', 'OJS', 'Linux', 'Web Server', 'Journal Management System'],
-      label: 'Group Project',
+      label: 'Proyek Kelompok',
       video: 'https://youtu.be/a11Ttekbh2g',
       icon: <BookOpen className="w-8 h-8 text-indigo-500" />,
       glowClass: 'glow-card-indigo',
@@ -144,7 +144,7 @@ export default function Projects() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl sm:text-4xl font-extrabold font-heading text-gray-900 dark:text-white">
-            Projects Portfolio
+            Portofolio Proyek
           </h2>
           <div className="mt-2 h-1.5 w-16 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full mx-auto" />
           <p className="mt-4 text-lg text-gray-650 dark:text-gray-400">
@@ -219,7 +219,7 @@ export default function Projects() {
                         </div>
 
                         <div className="px-4 py-2 text-xs font-bold rounded-xl bg-gray-900 group-hover:bg-emerald-600 dark:bg-gray-800 dark:group-hover:bg-cyan-600 text-white transition-colors duration-300 flex items-center gap-1">
-                          View Repository
+                          Lihat Repositori
                           <ExternalLink className="w-3.5 h-3.5" />
                         </div>
                       </>
@@ -227,11 +227,11 @@ export default function Projects() {
                       <>
                         <div className="text-sm font-semibold flex items-center gap-1.5 text-red-650 hover:text-red-500 dark:text-red-400 dark:hover:text-red-300 transition-colors">
                           <Video className="w-4.5 h-4.5 text-red-500" />
-                          <span>Video Demo</span>
+                          <span>Demo Video</span>
                         </div>
 
                         <div className="px-4 py-2 text-xs font-bold rounded-xl bg-gray-900 group-hover:bg-indigo-600 dark:bg-gray-800 dark:group-hover:bg-indigo-650 text-white transition-colors duration-300 flex items-center gap-1">
-                          Watch Project Demo
+                          Tonton Demo Proyek
                           <ExternalLink className="w-3.5 h-3.5" />
                         </div>
                       </>
@@ -239,11 +239,11 @@ export default function Projects() {
                       <>
                         <div className="text-sm font-semibold flex items-center gap-1.5 text-blue-600 dark:text-blue-400">
                           <Users className="w-4 h-4" />
-                          <span>{project.label || 'Group Project'}</span>
+                          <span>{project.label || 'Proyek Kelompok'}</span>
                         </div>
 
                         <div className="px-3 py-1.5 text-xs font-semibold rounded-xl bg-gray-100 dark:bg-gray-850 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-800">
-                          No Repository
+                          Tanpa Repositori
                         </div>
                       </>
                     )}
@@ -258,3 +258,4 @@ export default function Projects() {
     </section>
   );
 }
+

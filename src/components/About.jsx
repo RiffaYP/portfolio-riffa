@@ -34,11 +34,11 @@ export default function About() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl sm:text-4xl font-extrabold font-heading text-gray-900 dark:text-white">
-            About Me
+            Tentang Saya
           </h2>
           <div className="mt-2 h-1.5 w-16 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full mx-auto" />
           <p className="mt-4 text-lg text-gray-650 dark:text-gray-400">
-            Mengenal lebih dekat latar belakang akademis, minat bidang, dan motivasi saya untuk berkontribusi.
+            Mengenal lebih dekat latar belakang akademis, minat bidang, dan motivasi saya.
           </p>
         </div>
 
@@ -70,7 +70,7 @@ export default function About() {
                   Saya adalah mahasiswa program studi <strong>Teknik Informatika di Universitas Lampung (UNILA)</strong>. Sejak awal perkuliahan, saya fokus mendalami konsep dasar ilmu komputer, mulai dari logika pemrograman, struktur data, arsitektur sistem, hingga rekayasa perangkat lunak.
                 </p>
                 <p>
-                  Bagi saya, laboratorium komputer adalah tempat belajar bersama dan berbagi ilmu yang sangat penting. Saya ingin menjadi <strong>Asisten Laboratorium</strong> untuk membantu teman-teman memahami praktikum dengan baik, sekaligus mengasah kemampuan komunikasi dan kepemimpinan saya.
+                  Saya percaya bahwa belajar terbaik terjadi ketika ilmu dibagikan. Saya senang mendiskusikan materi perkuliahan, mengerjakan proyek bersama, dan terus mengasah kemampuan komunikasi serta kolaborasi.
                 </p>
                 <p>
                   Saya selalu berkomitmen untuk terus belajar, disiplin, dan senang berbagi pengetahuan melalui diskusi maupun proyek kolaborasi.

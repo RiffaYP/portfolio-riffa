@@ -53,22 +53,22 @@ export default function Hero() {
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 font-semibold text-xs uppercase tracking-wider animate-pulse-slow">
               <span className="w-2 h-2 rounded-full bg-emerald-500" />
-              <span>Informatics Student Portfolio</span>
+              <span>Portofolio Mahasiswa Informatika</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">
-              Hi, I am <br />
+              Hai, saya <br />
               <span className="bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 bg-clip-text text-transparent">
                 Riffa Yudika Permana
               </span>
             </h1>
 
             <p className="text-xl sm:text-2xl font-bold font-heading text-gray-700 dark:text-gray-300">
-              Informatics Engineering Student
+              Mahasiswa Teknik Informatika
             </p>
 
             <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Saya adalah mahasiswa Teknik Informatika Universitas Lampung yang tertarik pada pemrograman, pengembangan web, basis data, dan sistem komputer. Saat ini saya terus mengembangkan kemampuan melalui praktikum, tugas kuliah, dan project mandiri sebagai persiapan untuk berkontribusi di lingkungan laboratorium.
+              Saya adalah mahasiswa Program Studi Teknik Informatika Universitas Lampung yang tertarik pada pemrograman, pengembangan web, basis data, dan sistem komputer. Saat ini saya terus mengembangkan kemampuan melalui perkuliahan, tugas, dan proyek mandiri.
             </p>
 
             {/* CTA Buttons */}
@@ -78,7 +78,7 @@ export default function Hero() {
                 onClick={handleViewProjects}
                 className="w-full sm:w-auto px-8 py-3.5 rounded-xl font-semibold bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white shadow-lg shadow-emerald-500/20 hover:shadow-xl hover:shadow-emerald-500/30 hover:-translate-y-0.5 transition-all text-center flex items-center justify-center gap-2 group cursor-pointer"
               >
-                View Projects
+                Lihat Proyek
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
 
@@ -89,7 +89,7 @@ export default function Hero() {
                 className="w-full sm:w-auto px-8 py-3.5 rounded-xl font-semibold bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
                 <FileText className="w-4 h-4 text-emerald-500 dark:text-cyan-400" />
-                Download CV
+                Unduh CV
               </a>
 
               <a
@@ -171,19 +171,19 @@ export default function Hero() {
                     <br />
                     &nbsp;&nbsp;&#125;,
                     <br />
-                    &nbsp;&nbsp;labAssistantApplicant:{' '}
+                    &nbsp;&nbsp;openToCollaborate:{' '}
                     <span className="text-orange-400">true</span>
                     <br />
                     &#125;;
                     <br />
                     <br />
-                    <span className="text-gray-500">// Ready to collaborate and learn!</span>
+                    <span className="text-gray-500">// Siap berkolaborasi dan belajar!</span>
                     <br />
                     <span className="text-purple-400">console</span>.
                     <span className="text-blue-400">log</span>(
                     <span className="text-blue-400">student</span>.
                     <span className="text-emerald-400">name</span> +{' '}
-                    <span className="text-emerald-400">' is ready!'</span>);
+                    <span className="text-emerald-400">' siap berkarya!'</span>);
                   </code>
                 </pre>
               </div>

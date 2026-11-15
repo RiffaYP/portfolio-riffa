@@ -52,11 +52,11 @@ export default function Contact() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl sm:text-4xl font-extrabold font-heading text-gray-900 dark:text-white">
-            Get In Touch
+            Hubungi Saya
           </h2>
           <div className="mt-2 h-1.5 w-16 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full mx-auto" />
           <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
-            Silakan hubungi saya untuk berdiskusi tentang proyek kolaborasi, pertanyaan seputar praktikum, atau informasi lainnya.
+            Silakan hubungi saya untuk berdiskusi tentang proyek kolaborasi, pertanyaan seputar perkuliahan, atau informasi lainnya.
           </p>
         </div>
 
@@ -184,7 +184,7 @@ export default function Contact() {
                     value={formData.subject}
                     onChange={handleInputChange}
                     className="w-full px-4 py-2.5 rounded-xl bg-slate-900/80 dark:bg-slate-950/60 border border-slate-700/50 dark:border-slate-800/80 text-slate-100 placeholder-slate-400 text-sm focus:outline-none focus:border-cyan-500/60 focus:ring-1 focus:ring-cyan-500/20 focus:shadow-[0_0_15px_rgba(2,132,199,0.15)] transition-all duration-300 outline-none"
-                    placeholder="Wawancara Asisten Lab / Kolaborasi / Lainnya"
+                    placeholder="Kolaborasi / Pertanyaan / Lainnya"
                   />
                 </div>
 
