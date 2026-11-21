@@ -1,5 +1,5 @@
 ﻿import { useState } from 'react';
-import { ExternalLink, Dumbbell, Joystick, Wind, BookOpen, Users, Video, Gamepad2, Swords } from 'lucide-react';
+import { ExternalLink, Dumbbell, Joystick, Wind, BookOpen, Users, Video, Gamepad2, Swords, Crosshair } from 'lucide-react';
 
 export default function Projects() {
   const [filter, setFilter] = useState('Semua');
@@ -10,6 +10,30 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
+      title: 'Vector Siege',
+      category: 'Game',
+      desc: 'Game tower defense 3D sci-fi berbasis C++17 dan raylib dengan render primitif prosedural murni tanpa aset eksternal, sintesis audio PCM real-time, dan 50 wave musuh.',
+      tech: ['C++17', 'raylib', 'Procedural 3D', 'Audio Synthesis'],
+      repo: 'https://github.com/RiffaYP/Vector-Siege',
+      icon: <Crosshair className="w-8 h-8 text-emerald-500" />,
+      glowClass: 'glow-card-emerald',
+      illustration: (
+        <svg viewBox="0 0 100 60" className="w-full h-32 text-emerald-500/10 dark:text-emerald-400/10 fill-current">
+          <circle cx="50" cy="30" r="22" stroke="currentColor" strokeWidth="0.8" strokeDasharray="2,2" fill="none" />
+          <path d="M 10 15 Q 40 15 45 30 T 90 45" stroke="currentColor" strokeWidth="2" fill="none" opacity="0.4" />
+          <rect x="44" y="24" width="12" height="12" rx="2" stroke="currentColor" strokeWidth="1.2" fill="none" />
+          <circle cx="50" cy="30" r="3.5" fill="currentColor" />
+          <line x1="50" y1="30" x2="68" y2="20" stroke="currentColor" strokeWidth="2" />
+          <circle cx="72" cy="18" r="4" stroke="currentColor" strokeWidth="0.8" fill="none" />
+          <line x1="72" y1="12" x2="72" y2="24" stroke="currentColor" strokeWidth="0.8" />
+          <line x1="66" y1="18" x2="78" y2="18" stroke="currentColor" strokeWidth="0.8" />
+          <polygon points="26,13 30,15 26,17" fill="currentColor" />
+          <polygon points="78,41 82,43 78,45" fill="currentColor" />
+        </svg>
+      )
+    },
+    {
+      id: 2,
       title: 'Cyber Runner',
       category: 'Game',
       desc: 'Game ritme 3D bergaya Guitar Hero berbasis Three.js dan Vite dengan sinkronisasi audio-clock, deteksi beat drum otomatis, dan efek visual bloom neon.',
@@ -32,7 +56,7 @@ export default function Projects() {
       )
     },
     {
-      id: 2,
+      id: 3,
       title: 'Stickman Fighting HTML',
       category: 'Game',
       desc: 'Game tarung 2D browser (Neon Fighter) berbasis HTML5 Canvas dan JavaScript murni dengan 6 karakter petarung, sistem guard crush, combo air juggle, dan dual gamepad support.',
@@ -65,7 +89,7 @@ export default function Projects() {
       )
     },
     {
-      id: 3,
+      id: 4,
       title: 'Gym Membership Management',
       category: 'Web',
       desc: 'Aplikasi web berbasis Laravel untuk mengelola data member, paket keanggotaan, dan transaksi pembayaran gym.',
@@ -90,7 +114,7 @@ export default function Projects() {
       )
     },
     {
-      id: 4,
+      id: 5,
       title: 'Dungeons & Dragons Project',
       category: 'Game',
       desc: 'Proyek mata kuliah Pemrograman Berorientasi Objek berbasis Java yang menerapkan konsep class, object, method, dan alur program OOP.',
@@ -113,7 +137,7 @@ export default function Projects() {
       )
     },
     {
-      id: 5,
+      id: 6,
       title: 'DIVA AC Company Profile Website',
       category: 'Web',
       desc: 'Proyek kelompok mata kuliah Sistem Operasi berupa instalasi dan konfigurasi website company profile berbasis WordPress untuk usaha DIVA AC menggunakan Ubuntu. Website ini menampilkan informasi usaha, layanan, dan profil bisnis secara sederhana.',
@@ -144,7 +168,7 @@ export default function Projects() {
       )
     },
     {
-      id: 6,
+      id: 7,
       title: 'JIPI OJS Platform',
       category: 'Tools',
       desc: 'Proyek kelompok mata kuliah Sistem Operasi berupa instalasi dan konfigurasi Open Journal Systems (OJS) menggunakan Ubuntu. Sistem ini digunakan sebagai platform jurnal JIPI (Jurnal Inovasi dan Pengembangan Informatika) yang berisi jurnal, artikel, atau referensi yang berkaitan dengan bidang informatika.',
