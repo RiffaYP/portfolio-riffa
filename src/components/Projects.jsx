@@ -1,9 +1,32 @@
-﻿import { ExternalLink, Dumbbell, Joystick, Wind, BookOpen, Users, Video } from 'lucide-react';
+﻿import { ExternalLink, Dumbbell, Joystick, Wind, BookOpen, Users, Video, Gamepad2 } from 'lucide-react';
 
 export default function Projects() {
   const projects = [
     {
       id: 1,
+      title: 'Cyber Runner',
+      category: 'Game',
+      desc: 'Game ritme 3D bergaya Guitar Hero berbasis Three.js dan Vite dengan sinkronisasi audio-clock, deteksi beat drum otomatis, dan efek visual bloom neon.',
+      tech: ['Three.js', 'Vite', 'JavaScript', 'Web Audio API'],
+      repo: 'https://github.com/RiffaYP/cyber-runner',
+      icon: <Gamepad2 className="w-8 h-8 text-cyan-500" />,
+      glowClass: 'glow-card-cyan',
+      illustration: (
+        <svg viewBox="0 0 100 60" className="w-full h-32 text-cyan-500/10 dark:text-cyan-400/10 fill-current">
+          <polygon points="36,12 64,12 86,52 14,52" stroke="currentColor" strokeWidth="1.2" fill="none" />
+          <line x1="43" y1="12" x2="32" y2="52" stroke="currentColor" strokeWidth="0.8" strokeDasharray="2,2" />
+          <line x1="50" y1="12" x2="50" y2="52" stroke="currentColor" strokeWidth="1" />
+          <line x1="57" y1="12" x2="68" y2="52" stroke="currentColor" strokeWidth="0.8" strokeDasharray="2,2" />
+          <line x1="18" y1="45" x2="82" y2="45" stroke="currentColor" strokeWidth="1.5" />
+          <rect x="46" y="20" width="8" height="4" rx="1" fill="currentColor" opacity="0.6" />
+          <rect x="35" y="32" width="10" height="4.5" rx="1" fill="currentColor" opacity="0.8" />
+          <rect x="55" y="36" width="10" height="5" rx="1" fill="currentColor" />
+          <circle cx="50" cy="12" r="3" stroke="currentColor" strokeWidth="0.8" fill="none" />
+        </svg>
+      )
+    },
+    {
+      id: 2,
       title: 'Gym Membership Management',
       category: 'Web Development',
       desc: 'Aplikasi web berbasis Laravel untuk mengelola data member, paket keanggotaan, dan transaksi pembayaran gym.',
