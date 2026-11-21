@@ -1,4 +1,4 @@
-﻿import { ExternalLink, Dumbbell, Joystick, Wind, BookOpen, Users, Video, Gamepad2 } from 'lucide-react';
+﻿import { ExternalLink, Dumbbell, Joystick, Wind, BookOpen, Users, Video, Gamepad2, Swords } from 'lucide-react';
 
 export default function Projects() {
   const projects = [
@@ -27,6 +27,39 @@ export default function Projects() {
     },
     {
       id: 2,
+      title: 'Stickman Fighting HTML',
+      category: 'Game',
+      desc: 'Game tarung 2D browser (Neon Fighter) berbasis HTML5 Canvas dan JavaScript murni dengan 6 karakter petarung, sistem guard crush, combo air juggle, dan dual gamepad support.',
+      tech: ['HTML5 Canvas', 'JavaScript', 'Web Audio API', 'Gamepad API'],
+      repo: 'https://github.com/RiffaYP/Stickman-Fighting-HTML',
+      icon: <Swords className="w-8 h-8 text-indigo-500" />,
+      glowClass: 'glow-card-indigo',
+      illustration: (
+        <svg viewBox="0 0 100 60" className="w-full h-32 text-indigo-500/10 dark:text-indigo-400/10 fill-current">
+          <rect x="15" y="8" width="30" height="4" rx="1" stroke="currentColor" strokeWidth="0.8" fill="none" />
+          <rect x="17" y="9.5" width="20" height="1.5" fill="currentColor" />
+          <rect x="55" y="8" width="30" height="4" rx="1" stroke="currentColor" strokeWidth="0.8" fill="none" />
+          <rect x="63" y="9.5" width="20" height="1.5" fill="currentColor" />
+          <circle cx="50" cy="10" r="3" stroke="currentColor" strokeWidth="0.8" fill="none" />
+          <line x1="10" y1="50" x2="90" y2="50" stroke="currentColor" strokeWidth="1.2" />
+          <circle cx="34" cy="24" r="3.5" stroke="currentColor" strokeWidth="1" fill="none" />
+          <line x1="34" y1="27.5" x2="34" y2="38" stroke="currentColor" strokeWidth="1.2" />
+          <line x1="34" y1="31" x2="43" y2="30" stroke="currentColor" strokeWidth="1.2" />
+          <line x1="43" y1="30" x2="48" y2="24" stroke="currentColor" strokeWidth="1.2" />
+          <line x1="34" y1="38" x2="28" y2="50" stroke="currentColor" strokeWidth="1.2" />
+          <line x1="34" y1="38" x2="38" y2="50" stroke="currentColor" strokeWidth="1.2" />
+          <circle cx="66" cy="24" r="3.5" stroke="currentColor" strokeWidth="1" fill="none" />
+          <line x1="66" y1="27.5" x2="66" y2="38" stroke="currentColor" strokeWidth="1.2" />
+          <line x1="66" y1="31" x2="57" y2="33" stroke="currentColor" strokeWidth="1.2" />
+          <line x1="66" y1="38" x2="62" y2="50" stroke="currentColor" strokeWidth="1.2" />
+          <line x1="66" y1="38" x2="71" y2="50" stroke="currentColor" strokeWidth="1.2" />
+          <line x1="48" y1="29" x2="52" y2="33" stroke="currentColor" strokeWidth="1" />
+          <line x1="52" y1="29" x2="48" y2="33" stroke="currentColor" strokeWidth="1" />
+        </svg>
+      )
+    },
+    {
+      id: 3,
       title: 'Gym Membership Management',
       category: 'Web Development',
       desc: 'Aplikasi web berbasis Laravel untuk mengelola data member, paket keanggotaan, dan transaksi pembayaran gym.',
