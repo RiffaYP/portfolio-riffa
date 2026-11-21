@@ -95,7 +95,7 @@ export default function Projects() {
       category: 'Game',
       desc: 'Proyek mata kuliah Pemrograman Berorientasi Objek berbasis Java yang menerapkan konsep class, object, method, dan alur program OOP.',
       tech: ['Java', 'OOP'],
-      repo: 'https://github.com/RiffaYP/DND-project',
+      repo: 'https://github.com/Ryper29/DND-Project',
       icon: <Joystick className="w-8 h-8 text-cyan-500" />,
       glowClass: 'glow-card-cyan',
       illustration: (
