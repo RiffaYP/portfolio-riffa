@@ -1,6 +1,12 @@
-﻿import { ExternalLink, Dumbbell, Joystick, Wind, BookOpen, Users, Video, Gamepad2, Swords } from 'lucide-react';
+﻿import { useState } from 'react';
+import { ExternalLink, Dumbbell, Joystick, Wind, BookOpen, Users, Video, Gamepad2, Swords } from 'lucide-react';
 
 export default function Projects() {
+  const [filter, setFilter] = useState('Semua');
+
+  // ponytail: filter directly matches category; upgrade to tag array if multi-tagging needed.
+  const categories = ['Semua', 'Web', 'Game', 'Tools'];
+
   const projects = [
     {
       id: 1,
@@ -61,7 +67,7 @@ export default function Projects() {
     {
       id: 3,
       title: 'Gym Membership Management',
-      category: 'Web Development',
+      category: 'Web',
       desc: 'Aplikasi web berbasis Laravel untuk mengelola data member, paket keanggotaan, dan transaksi pembayaran gym.',
       tech: ['Laravel', 'PHP', 'MySQL', 'Blade'],
       repo: 'https://github.com/RiffaYP/project_gym-laravel',
@@ -84,9 +90,9 @@ export default function Projects() {
       )
     },
     {
-      id: 2,
+      id: 4,
       title: 'Dungeons & Dragons Project',
-      category: 'Object-Oriented Programming',
+      category: 'Game',
       desc: 'Proyek mata kuliah Pemrograman Berorientasi Objek berbasis Java yang menerapkan konsep class, object, method, dan alur program OOP.',
       tech: ['Java', 'OOP'],
       repo: 'https://github.com/RiffaYP/DND-project',
@@ -94,25 +100,22 @@ export default function Projects() {
       glowClass: 'glow-card-cyan',
       illustration: (
         <svg viewBox="0 0 100 60" className="w-full h-32 text-cyan-500/10 dark:text-cyan-400/10 fill-current">
-          {/* Hexagon Outline */}
           <polygon points="50,10 75,22 75,48 50,56 25,48 25,22" stroke="currentColor" strokeWidth="1.5" fill="none" />
-          {/* Inner lines of d20 */}
           <line x1="50" y1="10" x2="50" y2="30" stroke="currentColor" strokeWidth="1" />
           <line x1="25" y1="22" x2="50" y2="30" stroke="currentColor" strokeWidth="1" />
           <line x1="75" y1="22" x2="50" y2="30" stroke="currentColor" strokeWidth="1" />
           <line x1="50" y1="30" x2="50" y2="56" stroke="currentColor" strokeWidth="1" />
           <line x1="50" y1="30" x2="25" y2="48" stroke="currentColor" strokeWidth="1" />
           <line x1="50" y1="30" x2="75" y2="48" stroke="currentColor" strokeWidth="1" />
-          {/* Triangles on the edges */}
           <line x1="25" y1="22" x2="25" y2="48" stroke="currentColor" strokeWidth="1" />
           <line x1="75" y1="22" x2="75" y2="48" stroke="currentColor" strokeWidth="1" />
         </svg>
       )
     },
     {
-      id: 3,
+      id: 5,
       title: 'DIVA AC Company Profile Website',
-      category: 'Operating System / CMS Website',
+      category: 'Web',
       desc: 'Proyek kelompok mata kuliah Sistem Operasi berupa instalasi dan konfigurasi website company profile berbasis WordPress untuk usaha DIVA AC menggunakan Ubuntu. Website ini menampilkan informasi usaha, layanan, dan profil bisnis secara sederhana.',
       tech: ['Ubuntu', 'WordPress', 'Linux', 'CMS', 'Web Server'],
       label: 'Proyek Kelompok',
@@ -120,28 +123,20 @@ export default function Projects() {
       glowClass: 'glow-card-blue',
       illustration: (
         <svg viewBox="0 0 100 60" className="w-full h-32 text-blue-500/10 dark:text-blue-400/10 fill-current">
-          {/* Browser frame */}
           <rect x="10" y="8" width="80" height="44" rx="4" stroke="currentColor" strokeWidth="1.2" fill="none" />
-          {/* Browser header line */}
           <line x1="10" y1="18" x2="90" y2="18" stroke="currentColor" strokeWidth="1.2" />
-          {/* Window buttons */}
           <circle cx="16" cy="13" r="1.5" />
           <circle cx="22" cy="13" r="1.5" />
           <circle cx="28" cy="13" r="1.5" />
-          {/* AC Unit inside the browser */}
           <rect x="35" y="24" width="30" height="10" rx="1.5" stroke="currentColor" strokeWidth="1" fill="none" />
-          {/* AC grill details */}
           <line x1="38" y1="31" x2="62" y2="31" stroke="currentColor" strokeWidth="1" />
           <line x1="35" y1="28" x2="65" y2="28" stroke="currentColor" strokeWidth="0.8" />
-          {/* Cool air / wind lines flowing down from the AC */}
           <path d="M 40 37 Q 38 42 35 46" stroke="currentColor" strokeWidth="1" fill="none" strokeDasharray="2,2" />
           <path d="M 50 37 Q 50 43 50 47" stroke="currentColor" strokeWidth="1" fill="none" strokeDasharray="2,2" />
           <path d="M 60 37 Q 62 42 65 46" stroke="currentColor" strokeWidth="1" fill="none" strokeDasharray="2,2" />
-          {/* Snowflake indicator */}
           <circle cx="78" cy="30" r="3.5" stroke="currentColor" strokeWidth="0.8" fill="none" />
           <line x1="78" y1="25.5" x2="78" y2="34.5" stroke="currentColor" strokeWidth="0.8" />
           <line x1="73.5" y1="30" x2="82.5" y2="30" stroke="currentColor" strokeWidth="0.8" />
-          {/* Text lines simulating content on the website */}
           <line x1="16" y1="26" x2="28" y2="26" stroke="currentColor" strokeWidth="1" />
           <line x1="16" y1="31" x2="25" y2="31" stroke="currentColor" strokeWidth="1" />
           <line x1="16" y1="36" x2="29" y2="36" stroke="currentColor" strokeWidth="1" />
@@ -149,9 +144,9 @@ export default function Projects() {
       )
     },
     {
-      id: 4,
+      id: 6,
       title: 'JIPI OJS Platform',
-      category: 'Operating System / Journal Management System',
+      category: 'Tools',
       desc: 'Proyek kelompok mata kuliah Sistem Operasi berupa instalasi dan konfigurasi Open Journal Systems (OJS) menggunakan Ubuntu. Sistem ini digunakan sebagai platform jurnal JIPI (Jurnal Inovasi dan Pengembangan Informatika) yang berisi jurnal, artikel, atau referensi yang berkaitan dengan bidang informatika.',
       tech: ['Ubuntu', 'OJS', 'Linux', 'Web Server', 'Journal Management System'],
       label: 'Proyek Kelompok',
@@ -160,35 +155,28 @@ export default function Projects() {
       glowClass: 'glow-card-indigo',
       illustration: (
         <svg viewBox="0 0 100 60" className="w-full h-32 text-indigo-500/10 dark:text-indigo-400/10 fill-current">
-          {/* Browser frame */}
           <rect x="10" y="8" width="80" height="44" rx="4" stroke="currentColor" strokeWidth="1.2" fill="none" />
-          {/* Browser header line */}
           <line x1="10" y1="18" x2="90" y2="18" stroke="currentColor" strokeWidth="1.2" />
-          {/* Window buttons */}
           <circle cx="16" cy="13" r="1.5" />
           <circle cx="22" cy="13" r="1.5" />
           <circle cx="28" cy="13" r="1.5" />
-          {/* Open Journal/Book inside */}
-          {/* Left page */}
           <path d="M 28 26 Q 38 23 48 27 L 48 45 Q 38 41 28 44 Z" stroke="currentColor" strokeWidth="1" fill="none" />
-          {/* Right page */}
           <path d="M 72 26 Q 62 23 52 27 L 52 45 Q 62 41 72 44 Z" stroke="currentColor" strokeWidth="1" fill="none" />
-          {/* Book binding line */}
           <line x1="50" y1="25" x2="50" y2="45" stroke="currentColor" strokeWidth="1" />
-          {/* Lines representing text on the pages */}
           <line x1="32" y1="31" x2="44" y2="31" stroke="currentColor" strokeWidth="0.8" />
           <line x1="32" y1="35" x2="42" y2="35" stroke="currentColor" strokeWidth="0.8" />
           <line x1="32" y1="39" x2="44" y2="39" stroke="currentColor" strokeWidth="0.8" />
           <line x1="56" y1="31" x2="68" y2="31" stroke="currentColor" strokeWidth="0.8" />
           <line x1="56" y1="35" x2="66" y2="35" stroke="currentColor" strokeWidth="0.8" />
           <line x1="56" y1="39" x2="68" y2="39" stroke="currentColor" strokeWidth="0.8" />
-          {/* Graduation cap/achievement icon above the book */}
           <path d="M 50 17 L 55 20 L 50 23 L 45 20 Z" stroke="currentColor" strokeWidth="0.8" fill="none" />
           <line x1="55" y1="20" x2="55" y2="24" stroke="currentColor" strokeWidth="0.8" />
         </svg>
       )
     }
   ];
+
+  const visibleProjects = filter === 'Semua' ? projects : projects.filter((p) => p.category === filter);
 
   return (
     <section
@@ -198,7 +186,7 @@ export default function Projects() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-10">
           <h2 className="text-3xl sm:text-4xl font-extrabold font-heading text-gray-900 dark:text-white">
             Portofolio Proyek
           </h2>
@@ -208,9 +196,27 @@ export default function Projects() {
           </p>
         </div>
 
+        {/* Category Filter */}
+        <div className="flex flex-wrap justify-center gap-2 mb-12">
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              type="button"
+              onClick={() => setFilter(cat)}
+              className={`px-5 py-2 rounded-xl text-sm font-semibold transition-all duration-200 cursor-pointer ${
+                filter === cat
+                  ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-white shadow-md shadow-emerald-500/20'
+                  : 'bg-gray-100 dark:bg-dark-card text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white border border-gray-200 dark:border-gray-800'
+              }`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {projects.map((project) => {
+          {visibleProjects.map((project) => {
             const hasRepo = !!project.repo;
             const hasVideo = !!project.video;
             const hasLink = hasRepo || hasVideo;
