@@ -56,7 +56,7 @@ export default function Navbar() {
             <a
               href="#home"
               onClick={(e) => handleNavClick(e, '#home')}
-              className="flex items-center space-x-2 group"
+              className="flex items-center space-x-2 group rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 focus-visible:ring-offset-4 dark:focus-visible:ring-offset-dark-bg"
             >
               <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-cyan-500 flex items-center justify-center font-heading font-extrabold text-white text-lg shadow-lg group-hover:scale-105 transition-transform">
                 RY
@@ -74,7 +74,7 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className="px-4 py-2 rounded-lg font-medium text-sm text-gray-600 hover:text-emerald-500 dark:text-gray-300 dark:hover:text-cyan-400 transition-colors"
+                className="px-4 py-2 rounded-lg font-medium text-sm text-gray-700 hover:text-emerald-700 dark:text-gray-300 dark:hover:text-cyan-300 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500"
               >
                 {link.name}
               </a>
@@ -87,7 +87,7 @@ export default function Navbar() {
             <div className="md:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="p-2.5 rounded-xl text-gray-600 hover:text-emerald-500 dark:text-gray-300 dark:hover:text-cyan-400 focus:outline-none transition-colors"
+                className="p-2.5 rounded-xl text-gray-700 hover:text-emerald-700 dark:text-gray-300 dark:hover:text-cyan-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 transition-colors"
                 aria-label="Toggle menu"
               >
                 {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -109,7 +109,7 @@ export default function Navbar() {
               key={link.name}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className="block px-4 py-3 rounded-xl font-medium text-base text-gray-700 hover:bg-emerald-500/10 hover:text-emerald-500 dark:text-gray-300 dark:hover:bg-cyan-500/10 dark:hover:text-cyan-400 transition-colors"
+              className="block px-4 py-3 rounded-xl font-medium text-base text-gray-800 hover:bg-emerald-500/10 hover:text-emerald-700 dark:text-gray-200 dark:hover:bg-cyan-500/10 dark:hover:text-cyan-300 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500"
             >
               {link.name}
             </a>

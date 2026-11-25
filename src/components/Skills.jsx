@@ -59,12 +59,12 @@ export default function Skills() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl font-extrabold font-heading text-gray-900 dark:text-white">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold font-heading tracking-tight text-gray-900 dark:text-white">
             Keahlian & Kompetensi
           </h2>
           <div className="mt-2 h-1.5 w-16 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full mx-auto" />
-          <p className="mt-4 text-lg text-gray-650 dark:text-gray-400">
+          <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
             Bahasa pemrograman, tools, dan kompetensi mata kuliah yang saya pelajari selama perkuliahan.
           </p>
         </div>

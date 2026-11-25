@@ -36,7 +36,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-white dark:bg-dark-surface border-t border-gray-150 dark:border-gray-800 text-gray-600 dark:text-gray-400 py-12 transition-colors">
+    <footer className="bg-white dark:bg-dark-surface border-t border-gray-200 dark:border-gray-800 text-gray-600 dark:text-gray-400 py-12 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           
@@ -78,10 +78,10 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="my-8 border-t border-gray-150 dark:border-gray-850" />
+        <div className="my-8 border-t border-gray-200 dark:border-gray-800" />
 
         {/* Copyright */}
-        <div className="flex flex-col sm:flex-row items-center justify-between text-xxs text-gray-400 gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 gap-4">
           <div>
               © {new Date().getFullYear()} Riffa Yudika Permana. Hak cipta dilindungi.
           </div>

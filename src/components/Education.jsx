@@ -58,12 +58,12 @@ export default function Education() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl font-extrabold font-heading text-gray-900 dark:text-white">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold font-heading tracking-tight text-gray-900 dark:text-white">
             Riwayat Pendidikan
           </h2>
           <div className="mt-2 h-1.5 w-16 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full mx-auto" />
-          <p className="mt-4 text-lg text-gray-655 dark:text-gray-400">
+          <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
             Riwayat pendidikan yang membentuk cara berpikir logis dan dasar pemahaman akademis saya.
           </p>
         </div>
@@ -73,7 +73,7 @@ export default function Education() {
           {educations.map((edu) => (
             <div
               key={edu.id}
-              className="p-8 rounded-3xl bg-gray-50 dark:bg-dark-card border border-gray-150 dark:border-gray-800 shadow-xl flex flex-col justify-between hover:shadow-2xl transition-shadow duration-300 relative overflow-hidden"
+              className="p-8 rounded-3xl bg-gray-50 dark:bg-dark-card border border-gray-200 dark:border-gray-800 shadow-xl flex flex-col justify-between hover:shadow-2xl transition-shadow duration-300 relative overflow-hidden"
             >
               {/* Top Accent line */}
               <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-emerald-500 to-cyan-500" />
@@ -82,11 +82,11 @@ export default function Education() {
                 {/* Card Header */}
                 <div className="flex items-start justify-between mb-6">
                   <div className="flex items-center space-x-4">
-                    <div className="p-3 bg-white dark:bg-gray-850 rounded-2xl shadow-md text-emerald-500 dark:text-cyan-400">
+                    <div className="p-3 bg-white dark:bg-dark-card rounded-2xl shadow-md text-emerald-500 dark:text-cyan-400">
                       {edu.icon}
                     </div>
                     <div>
-                      <span className="text-xxs font-bold uppercase tracking-widest text-emerald-600 dark:text-cyan-400">
+                      <span className="text-xs font-bold uppercase tracking-widest text-emerald-600 dark:text-cyan-400">
                         {edu.tag}
                       </span>
                       <h3 className="text-xl font-bold font-heading text-gray-900 dark:text-white mt-0.5">
@@ -113,7 +113,7 @@ export default function Education() {
                 </div>
 
                 {/* Bullets */}
-                <ul className="space-y-2 mb-6 text-sm text-gray-650 dark:text-gray-400 list-disc list-outside pl-4 leading-relaxed">
+                <ul className="space-y-2 mb-6 text-sm text-gray-600 dark:text-gray-400 list-disc list-outside pl-4 leading-relaxed">
                   {edu.details.map((detail, idx) => (
                     <li key={idx}>
                       {detail}
@@ -123,7 +123,7 @@ export default function Education() {
               </div>
 
               {/* Course Focus Badges */}
-              <div className="pt-6 border-t border-gray-150 dark:border-gray-800">
+              <div className="pt-6 border-t border-gray-200 dark:border-gray-800">
                 <h4 className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3 flex items-center">
                   <BookOpen className={`w-3.5 h-3.5 mr-1 ${edu.accentColorClass}`} />
                   {edu.coursesLabel}

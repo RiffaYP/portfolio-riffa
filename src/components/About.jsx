@@ -32,12 +32,12 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl font-extrabold font-heading text-gray-900 dark:text-white">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold font-heading tracking-tight text-gray-900 dark:text-white">
             Tentang Saya
           </h2>
           <div className="mt-2 h-1.5 w-16 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full mx-auto" />
-          <p className="mt-4 text-lg text-gray-650 dark:text-gray-400">
+          <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
             Mengenal lebih dekat latar belakang akademis, minat bidang, dan motivasi saya.
           </p>
         </div>
@@ -91,7 +91,7 @@ export default function About() {
                   key={index}
                   className="p-6 rounded-2xl bg-gray-50 dark:bg-dark-card border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
                 >
-                  <div className="mb-4 inline-flex p-3 rounded-xl bg-white dark:bg-gray-850 shadow-sm">
+                  <div className="mb-4 inline-flex p-3 rounded-xl bg-white dark:bg-dark-card shadow-sm">
                     {interest.icon}
                   </div>
                   <h4 className="text-lg font-bold font-heading mb-2 text-gray-900 dark:text-white">

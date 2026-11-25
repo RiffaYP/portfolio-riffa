@@ -54,8 +54,8 @@ export default function Experience() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl font-extrabold font-heading text-gray-900 dark:text-white">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold font-heading tracking-tight text-gray-900 dark:text-white">
             Pengalaman Organisasi
           </h2>
           <div className="mt-2 h-1.5 w-16 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full mx-auto" />
@@ -90,7 +90,7 @@ export default function Experience() {
                   <div className="w-full md:w-1/2 hidden md:block" />
 
                   {/* Experience Card */}
-                  <div className="w-full md:w-[calc(50%-2rem)] ml-10 md:ml-0 p-6 rounded-3xl bg-white dark:bg-dark-card border border-gray-150 dark:border-gray-800 shadow-xl transition-transform hover:-translate-y-1 duration-300">
+                  <div className="w-full md:w-[calc(50%-2rem)] ml-10 md:ml-0 p-6 rounded-3xl bg-white dark:bg-dark-card border border-gray-200 dark:border-gray-800 shadow-xl transition-transform hover:-translate-y-1 duration-300">
                     <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
                       <span className="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded-md bg-emerald-100 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">
                         {exp.type}
@@ -111,7 +111,7 @@ export default function Experience() {
                     {/* Bullet Achievements */}
                     <ul className="space-y-2 mb-4">
                       {exp.bullets.map((bullet, bIdx) => (
-                        <li key={bIdx} className="text-xs sm:text-sm text-gray-650 dark:text-gray-400 flex items-start space-x-1.5 leading-relaxed">
+                        <li key={bIdx} className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 flex items-start space-x-1.5 leading-relaxed">
                           <CircleDot className="w-3 h-3 text-cyan-500 mt-1 flex-shrink-0" />
                           <span>{bullet}</span>
                         </li>

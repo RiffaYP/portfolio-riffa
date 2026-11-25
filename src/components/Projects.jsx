@@ -214,11 +214,11 @@ export default function Projects() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10">
-          <h2 className="text-3xl sm:text-4xl font-extrabold font-heading text-gray-900 dark:text-white">
+          <h2 className="text-3xl sm:text-4xl font-bold font-heading tracking-tight text-gray-900 dark:text-white">
             Portofolio Proyek
           </h2>
           <div className="mt-2 h-1.5 w-16 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full mx-auto" />
-          <p className="mt-4 text-lg text-gray-650 dark:text-gray-400">
+          <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
             Koleksi proyek perangkat lunak yang saya bangun secara mandiri maupun terstruktur untuk mengeksplorasi ilmu komputer praktis.
           </p>
         </div>
@@ -230,7 +230,7 @@ export default function Projects() {
               key={cat}
               type="button"
               onClick={() => setFilter(cat)}
-              className={`px-5 py-2 rounded-xl text-sm font-semibold transition-all duration-200 cursor-pointer ${
+               className={`px-4 sm:px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 cursor-pointer focus-visible:ring-2 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-dark-surface ${
                 filter === cat
                   ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-white shadow-md shadow-emerald-500/20'
                   : 'bg-gray-100 dark:bg-dark-card text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white border border-gray-200 dark:border-gray-800'
@@ -261,20 +261,20 @@ export default function Projects() {
               <CardComponent
                 key={project.id}
                 {...cardProps}
-                className={`p-6 rounded-3xl bg-gray-50 dark:bg-dark-card border border-gray-150 dark:border-gray-800 shadow-xl flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl ${project.glowClass} group ${hasLink ? 'cursor-pointer' : ''}`}
+                className={`p-6 rounded-3xl bg-gray-50 dark:bg-dark-card border border-gray-200 dark:border-gray-800 shadow-xl flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl ${project.glowClass} group ${hasLink ? 'cursor-pointer' : ''}`}
               >
                 <div>
                   {/* Illustration Frame */}
-                  <div className="w-full rounded-2xl bg-white dark:bg-gray-850 p-4 border border-gray-100 dark:border-gray-800 flex items-center justify-center mb-6">
+                  <div className="w-full rounded-2xl bg-white dark:bg-dark-card p-4 border border-gray-100 dark:border-gray-800 flex items-center justify-center mb-6">
                     {project.illustration}
                   </div>
 
                   {/* Info */}
                   <div className="flex items-center justify-between mb-3">
-                    <span className="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-100 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">
+                    <span className="max-w-[70%] px-3 py-1 rounded-full text-xs font-semibold bg-emerald-100 dark:bg-emerald-500/15 text-emerald-800 dark:text-emerald-300">
                       {project.category}
                     </span>
-                    <div className="p-2 rounded-xl bg-white dark:bg-gray-850 shadow-sm">
+                    <div className="p-2 rounded-xl bg-white dark:bg-dark-card shadow-sm">
                       {project.icon}
                     </div>
                   </div>
@@ -298,7 +298,7 @@ export default function Projects() {
                     ))}
                   </div>
 
-                  <div className="flex items-center justify-between pt-4 border-t border-gray-150 dark:border-gray-800">
+                  <div className="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-800">
                     {hasLive ? (
                       <>
                         <div className="text-sm font-semibold flex items-center gap-1.5 text-gray-600 dark:text-gray-400">
@@ -326,7 +326,7 @@ export default function Projects() {
                       </>
                     ) : hasVideo ? (
                       <>
-                        <div className="text-sm font-semibold flex items-center gap-1.5 text-red-650 hover:text-red-500 dark:text-red-400 dark:hover:text-red-300 transition-colors">
+                        <div className="text-sm font-semibold flex items-center gap-1.5 text-red-600 hover:text-red-500 dark:text-red-400 dark:hover:text-red-300 transition-colors">
                           <Video className="w-4.5 h-4.5 text-red-500" />
                           <span>Demo Video</span>
                         </div>
@@ -343,7 +343,7 @@ export default function Projects() {
                           <span>{project.label || 'Proyek Kelompok'}</span>
                         </div>
 
-                        <div className="px-3 py-1.5 text-xs font-semibold rounded-xl bg-gray-100 dark:bg-gray-850 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-800">
+                        <div className="px-3 py-1.5 text-xs font-semibold rounded-xl bg-gray-100 dark:bg-dark-card text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-800">
                           Tanpa Repositori
                         </div>
                       </>
