@@ -306,7 +306,7 @@ export default function Projects() {
                           <span>Demo Langsung</span>
                         </div>
                         <div className="px-4 py-2 text-xs font-bold rounded-xl bg-gray-900 group-hover:bg-emerald-600 dark:bg-gray-800 dark:group-hover:bg-cyan-600 text-white transition-colors duration-300 flex items-center gap-1">
-                          Buka Aplikasi
+                          Buka Website
                           <ExternalLink className="w-3.5 h-3.5" />
                         </div>
                       </>
