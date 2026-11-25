@@ -97,6 +97,7 @@ export default function Projects() {
       desc: 'Aplikasi web berbasis Laravel untuk mengelola data member, paket keanggotaan, dan transaksi pembayaran gym.',
       tech: ['Laravel', 'PHP', 'MySQL', 'Blade'],
       repo: 'https://github.com/RiffaYP/project_gym-laravel',
+      live: 'https://gym-app.freedev.app/',
       icon: <Dumbbell className="w-8 h-8 text-emerald-500" />,
       glowClass: 'glow-card-emerald',
       illustration: (
@@ -245,11 +246,12 @@ export default function Projects() {
           {visibleProjects.map((project) => {
             const hasRepo = !!project.repo;
             const hasVideo = !!project.video;
-            const hasLink = hasRepo || hasVideo;
+            const hasLive = !!project.live;
+            const hasLink = hasRepo || hasVideo || hasLive;
             const CardComponent = hasLink ? 'a' : 'div';
             const cardProps = hasLink
               ? {
-                   href: project.live || project.repo || project.video,
+                  href: project.live || project.repo || project.video,
                   target: '_blank',
                   rel: 'noopener noreferrer',
                 }
@@ -297,7 +299,18 @@ export default function Projects() {
                   </div>
 
                   <div className="flex items-center justify-between pt-4 border-t border-gray-150 dark:border-gray-800">
-                    {hasRepo ? (
+                    {hasLive ? (
+                      <>
+                        <div className="text-sm font-semibold flex items-center gap-1.5 text-gray-600 dark:text-gray-400">
+                          <ExternalLink className="w-4 h-4" />
+                          <span>Demo Langsung</span>
+                        </div>
+                        <div className="px-4 py-2 text-xs font-bold rounded-xl bg-gray-900 group-hover:bg-emerald-600 dark:bg-gray-800 dark:group-hover:bg-cyan-600 text-white transition-colors duration-300 flex items-center gap-1">
+                          Buka Aplikasi
+                          <ExternalLink className="w-3.5 h-3.5" />
+                        </div>
+                      </>
+                    ) : hasRepo ? (
                       <>
                         <div className="text-sm font-semibold flex items-center gap-1.5 text-gray-600 hover:text-emerald-500 dark:text-gray-400 dark:hover:text-cyan-400 transition-colors">
                           <svg viewBox="0 0 24 24" className="w-4.5 h-4.5 fill-current" aria-hidden="true">
