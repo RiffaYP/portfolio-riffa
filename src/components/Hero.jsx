@@ -110,7 +110,7 @@ export default function Hero() {
           <div className="lg:col-span-5 w-full max-w-md mx-auto lg:max-w-none relative mb-14 lg:mb-0">
             {/* Soft Glow behind the card */}
             <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-cyan-500/10 to-emerald-500/10 blur-xl opacity-40" />
-            <div className="relative w-full rounded-2xl bg-slate-950 border border-cyan-500/20 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.8)] overflow-hidden animate-float">
+            <div className="relative w-full rounded-2xl bg-slate-950 border border-cyan-500/20 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.8)] overflow-hidden">
               {/* Terminal Title Bar */}
               <div className="flex items-center justify-between px-4 py-3 bg-slate-950 border-b border-slate-900">
                 <div className="flex items-center space-x-1.5">
