@@ -39,6 +39,7 @@ export default function Projects() {
       desc: 'Game ritme 3D bergaya Guitar Hero berbasis Three.js dan Vite dengan sinkronisasi audio-clock, deteksi beat drum otomatis, dan efek visual bloom neon.',
       tech: ['Three.js', 'Vite', 'JavaScript', 'Web Audio API'],
       repo: 'https://github.com/RiffaYP/cyber-runner',
+      live: 'https://RiffaYP.github.io/cyber-runner/',
       icon: <Gamepad2 className="w-8 h-8 text-cyan-500" />,
       glowClass: 'glow-card-cyan',
       illustration: (
@@ -62,6 +63,7 @@ export default function Projects() {
       desc: 'Game tarung 2D browser (Neon Fighter) berbasis HTML5 Canvas dan JavaScript murni dengan 6 karakter petarung, sistem guard crush, combo air juggle, dan dual gamepad support.',
       tech: ['HTML5 Canvas', 'JavaScript', 'Web Audio API', 'Gamepad API'],
       repo: 'https://github.com/RiffaYP/Stickman-Fighting-HTML',
+      live: 'https://RiffaYP.github.io/Stickman-Fighting-HTML/',
       icon: <Swords className="w-8 h-8 text-indigo-500" />,
       glowClass: 'glow-card-indigo',
       illustration: (
@@ -247,7 +249,7 @@ export default function Projects() {
             const CardComponent = hasLink ? 'a' : 'div';
             const cardProps = hasLink
               ? {
-                  href: project.repo || project.video,
+                   href: project.live || project.repo || project.video,
                   target: '_blank',
                   rel: 'noopener noreferrer',
                 }
